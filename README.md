@@ -1,4 +1,6 @@
-pyqt5_tut
-=========
+PyQT5 tutorial
+==============
 
-Teach myself PyQT5
+A tutorial project to teach myself PyQT5.
+
+- first.py - a sort of Hello World. Has a button and an entry field.
