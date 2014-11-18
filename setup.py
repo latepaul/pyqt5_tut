@@ -5,10 +5,12 @@ base = None
 if sys.platform == 'win32':
     base = 'Win32GUI'
 
-path_platforms = ( "C:\Python34\Lib\site-packages\PyQt5\plugins\platforms\qwindows.dll", "platforms\qwindows.dll" )
+path_platforms = ( "C:\Python34\Lib\site-packages\PyQt5\plugins\platforms\qwindows.dll", "platforms\qwindows.dll")
+egl_lib = ( "C:\Python34\Lib\site-packages\PyQt5\libEGL.dll", "libEGL.dll")
+
 options = {
     'build_exe': {
-        "includes" : [ "re", "atexit" ], "include_files" : [ path_platforms ]
+        "includes" : [ "re", "atexit" ], "include_files" : [ path_platforms, egl_lib ],"include_msvcr": True
     }
 }
 
